@@ -19,3 +19,11 @@ length(samp)
 
 I can take the mean of the sample, too!
 The mean is `r mean(samp)`.
+```{r}
+Q2_data_car = c(67, 50, 85, 43, 64, 35, 47, 97, 58, 58, 10, 56, 50)
+Q2_data_bike = c(45, 39, 25, 47, 49, 5, 70, 99, 74, 37, 99, 35, 8, 59)
+names(Q2_data_bike) = 'bike'
+names(Q2_data_car) = 'car'
+boxplot(Q2_data_bike,Q2_data_car,horizontal = TRUE)
+```
+
